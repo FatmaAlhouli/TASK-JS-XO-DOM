@@ -2,12 +2,20 @@
 // Pre-made function that will fill the button with its number.
 // First button top left is called 1, last button bottom right is 9
 function fillButton(index, text) {
-  // This function fills the button of the send index
-  document.getElementById(index).innerHTML = text;
+   // This function fills the button of the send index
+document.getElementById(index).innerHTML = text;
+fillButton(1, "X");
+fillButton(9, "O");
 }
+
+ 
+ 
+
+
 // pre-made a function. You can use this function to present an alert to say someone wins
 function winningAlert(winner) {
   if(confirm(`Horraaay, ${winner} wins!`)){
+    
      // The code here will be exectued if you press on OK button that will pop on the window 
   }
 }
@@ -27,7 +35,15 @@ fillButton(9, "O");
 function clickButton(index) {
   console.log(`Button number ${index} is clicked`);
   // Your main code here.
+  
+fillButton (index,"x");
+if (fillButton === (index,X)){
 }
+
+
+
+    
+
 
 /**
  * (Optional) It's always a good idea to make a function for every single purpose.
