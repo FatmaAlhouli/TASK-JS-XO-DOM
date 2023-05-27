@@ -1,11 +1,12 @@
 // ❗️ DON'T TOUCH THESE 2 FUNCTIONs
 // Pre-made function that will fill the button with its number.
 // First button top left is called 1, last button bottom right is 9
+let turn = "X";
 function fillButton(index, text) {
    // This function fills the button of the send index
-document.getElementById(index).innerHTML = text;
-fillButton(1, "X");
-fillButton(9, "O");
+
+
+
 }
 
  
@@ -15,8 +16,13 @@ fillButton(9, "O");
 // pre-made a function. You can use this function to present an alert to say someone wins
 function winningAlert(winner) {
   if(confirm(`Horraaay, ${winner} wins!`)){
+
     
      // The code here will be exectued if you press on OK button that will pop on the window 
+     for (let i = 1 ; i < 10; i ++ ){
+      document.getElementById(1 + i);
+
+     }
   }
 }
 
@@ -37,9 +43,13 @@ function clickButton(index) {
   // Your main code here.
   
 fillButton (index,"x");
-if (fillButton === (index,X)){
+if (fillButton === (index,X) && (index,"")){
+   fillButton = (index,"ْX");
 }
-
+else {
+   fillButton === (index,"O");
+}
+}
 
 
     
